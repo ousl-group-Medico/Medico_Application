@@ -1,0 +1,169 @@
+body{
+    margin: 0px;
+  }
+  
+  .container_01{
+    display: grid;
+    height: 35vh;
+    grid-template-columns: auto auto auto;
+  }
+  .container_02{
+    display: grid;
+    height: 40vh;
+    grid-template-columns: auto auto;
+  }
+  .container_03{
+    display: grid;
+    height: 25vh;
+    grid-template-columns: auto auto;
+  }
+  .patient_details{
+    color: #872D06;
+    font-size: large;
+    justify-content: right;
+    margin-left: 15%;
+    
+  }
+  
+  h2{
+    color: #F87D0C;
+    margin-left: 10%;
+  }
+  
+  .doctor_details {
+    background-color: #D9D9D9;
+    width: 400px;
+    border: 1px solid #800404;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin: auto;
+    color: #800404;
+  
+  }
+  
+  
+  .blood_type{
+  margin-top: 50px;
+  
+  
+  }
+  #bmi{
+  background-color: #F87D0C;
+  margin: 30px 15px 0 0 ;
+  padding: 9px 30px 9px 25px;
+  color: #800404;
+  
+  }
+  #blood_type{
+  background-color: #F87D0C;
+  margin: 20px 10px 0 0;
+  padding: 9px 7px 9px 7px;
+  color: #800404;
+  }
+  
+  #bmi_input{
+  background-color: #D9D9D9;
+  height: 35px;
+  width: 110px;
+  border: none;
+  }
+  
+  #b_type_input{
+  background-color: #D9D9D9;
+  height: 35px;
+  width: 110px;
+  border: none;
+  }
+
+  table{
+    border-collapse: collapse;
+    width: 55%;
+    height: 20px;
+    margin-left: 50px;
+  }
+  
+  td, th {
+    border: 1px solid #dddd;
+    text-align: center;
+    padding: 3px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f5c5a9;
+  }
+  /*tr:nth-child(odd) {
+    background-color: #F6EEE9;
+  }*/
+  /*#status{
+    color: darkred;
+    border: none;
+    padding: 33px 43px 33px 43px;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    background-color: aqua;
+
+
+  }*/
+  #status{
+    background-origin: padding-box;
+    border-color: #800404;
+    background-color: #800404;
+    color: white;
+
+  }
+
+
+  .one{
+    background-color: #FFA978;
+    color: #961F04;
+  }
+  
+  .buttons{
+    text-align: center;
+    
+  }
+  #prescription,#allergies,#medical_history{
+    background-color: #FFA978;
+    border: none;
+    color: #8A3505;
+    padding: 18px;
+    margin: 10px;
+    font-size: large;
+    width: 260px;
+  }
+  .a{
+    color: #800404;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .pharmacy_details{
+    margin-left: 50px;
+    font-size: larger;
+  
+}
+#first,#second{
+  background-color: #D9D9D9;
+  height: 30px;
+  width: 300px;
+  border: none;
+  text-align: center;
+}
+#third{
+    background-color: #D9D9D9;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    border: none;
+}
+  #confirm{
+    background-color: #FFA978;
+    border: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: large;
+    padding: 15px;
+    width: 150px;
+    border-radius: 8px;
+  }

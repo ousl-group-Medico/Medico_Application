@@ -1,0 +1,40 @@
+h1{
+    color: #F87D0C;
+    margin: 40px 0 0 60px;
+  }
+
+table{
+    border-collapse: collapse;
+    width: 45%;
+    height: 20px;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  
+  td, th {
+    border: 1px solid #dddd;
+    text-align: center;
+    padding: 3px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f5c5a9;
+  }
+  .one{
+    background-color: #FFA978;
+    color: #961F04;
+  }
+  #prescription,#allergies,#medical_history,#profile{
+    background-color: #FFA978;
+    border: none;
+    color: #8A3505;
+    padding: 18px;
+    margin: 1px;
+    font-size: large;
+    width: 260px;
+  }
+.buttons{
+    position: fixed;
+    bottom: 90px;
+    right: 250px;
+  }

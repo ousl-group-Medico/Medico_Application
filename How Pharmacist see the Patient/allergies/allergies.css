@@ -1,0 +1,60 @@
+#prescription,#allergies,#medical_history,#profile{
+    background-color: #FFA978;
+    border: none;
+    color: #8A3505;
+    padding: 18px;
+    margin: 1px;
+    font-size: large;
+    width: 260px;
+  }
+.buttons{
+    position: fixed;
+    bottom: 120px;
+    right: 200px;
+  }
+h1{
+    color: #F87D0C;
+    margin: 40px 0 0 60px;
+  }
+
+td{
+  background-color:  #D9D9D9;
+  position: relative;
+  left: 80px;
+  top: 45px;
+}
+.one{
+  color: darkred;
+  font-size: large;
+  font-weight: bold;
+  height: 70px;
+  text-align: center;
+}
+.two{
+  color: black;
+  height: 350px;
+  text-align: center;
+}
+img{
+  position: fixed;
+  right: 150px;
+  top: 45px;
+  height: 250px;
+}
+
+/*.showcase {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuD4PSXhzLpD-ReP83Bh9a1aX9ZdPP7QrBWg&usqp=CAU");
+  height: 400px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+}*/
