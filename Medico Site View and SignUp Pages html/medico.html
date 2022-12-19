@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>medico.lk</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/medico.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">
+        <div class="icon">
+          <img src="C:\Users\nipun\Downloads\arsha\arsha\assets\img\medico.png" height="100px" width="140px">
+        </div>
+      </a></h1>
+      
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>   
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#form-signup">Register</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Let's Make Your Health Easier</h1>
+          <h2>This application connects doctors, patients, and pharmacists 
+            <br> for a better healthcare service. </h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <button type="submit" class="login" onclick="login()"><span></span>Get Started</span></button>
+            <script>
+              function login() {
+                  document.location.href = "#forms";
+              }
+          </script>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- End Hero -->
+
+  <!--sign up-->
+
+  <section class="forms-section">
+    <div class="forms" id="forms">
+      <div class="form-wrapper is-active">
+        <button type="button" class="switcher switcher-login">
+          Login
+          <span class="underline"></span>
+        </button>
+        <form class="form form-login">
+          <fieldset>
+            <legend>Please, enter your username and password for login.</legend>
+            <div class="input-block">
+              <label for="login-email">Username (Reg.No)</label>
+              <input id="login-email" type="email" required>
+            </div>
+            <div class="input-block">
+              <label for="login-password">Password</label>
+              <input id="login-password" type="password" required>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn-login">Login</button>
+        </form>
+      </div>
+      <div class="form-wrapper">
+        <button type="button" class="switcher switcher-signup">
+          Sign Up
+          <span class="underline"></span>
+        </button>
+        <form class="form form-signup" id="form-signup">
+          <fieldset>
+            <div class="input-block">
+              <p>Select Who you are 
+                <br>for Sign Up</p>
+            </div>
+            <div class="input-block">
+              <button type="submit" class="btn-signup" formaction="doctorSignup.html">Doctor</button>
+            </div>
+            <div class="input-block">
+              <button type="submit" class="btn-signup" formaction="pharmacistSignup.html">Pharmacist</button>
+            </div>
+            <div class="input-block">
+              <button type="submit" class="btn-signup" formaction="patientSignup.html">Patient</button>
+            </div>
+            <div class="input-block">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const switchers = [...document.querySelectorAll('.switcher')]
+
+switchers.forEach(item => {
+	item.addEventListener('click', function() {
+		switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+		this.parentElement.classList.add('is-active')
+	})
+})
+  </script>
+
+  </section>
+
+  <!--sign up-->
+
+  <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Medico healthcare systems,is a global provider of complex solutions in the healthcare sector by 
+        connect doctors,patient and pharmacist through one platform.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Our Mission
+              <br>To provide patient-centered healthcare with excellence through high quality, service and access.
+            </li>
+              <li><i class="ri-check-double-line"></i>Our Vision
+              <br>Making your health easier with impressive service
+            </li>
+           </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>This software application connects doctors, patients, and pharmacists for a better 
+              health care service.
+              <ul>
+                <li> We create a system that patients, doctors, and pharmacists are connected with each 
+                  other and there will be no need for paper works.</li>
+                  <li> Patients can Sign up with the system with their personal details.</li>
+                  <li> Each patient has a unique QR code that shows the patient's history like what kind 
+                    of disease they had, what kind of medicine they took, and also from where and from 
+                    which doctor they got medicine.</li>
+                    <li> The doctor can easily check the patient and if there are any prescriptions the doctor 
+                      can add them to the system.</li>
+                      <li> The pharmacist will be able to scan the QR and see the medicine and dosage of the 
+                        medicine the patient wants.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Us Section -->
+
+    <!-- ======= Team Section ======= -->
+        <section id="team" class="team section-bg">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-title">
+              <h2>Our Team</h2>
+              <p>We are a group of Bachelor of Software engineering undergraduate students at the 
+                Open University of Sri Lanka.</p>
+            </div>
+    
+            <div class="row">
+    
+              <div class="col-lg-6">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1024px-Default_pfp.svg.png" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Uthpala Isurindi</h4>
+                    <span>Developer</span>
+                    <p>uththraisurindi@gmail.com</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href="www.linkedin.com/in/uththara-perera"> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1024px-Default_pfp.svg.png" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Nipuni Kavindya</h4>
+                    <span>Developer</span>
+                    <p>nipunikavindya@gmail.com</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href="https://www.linkedin.com/in/nipunikavindya"> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1024px-Default_pfp.svg.png" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Vihari Gunarathna</h4>
+                    <span>Developer</span>
+                    <p>dviha7@gmail.com</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1024px-Default_pfp.svg.png" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Niroshima Fernando</h4>
+                    <span>Developer</span>
+                    <p>niroshimafernandz@gmail.com</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href="https://www.linkedin.com/in/niroshima-fernando-292a13237/"> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+        </section>
+        <!-- End Team Section -->
+
+        <!-- ======= Quote Section ======= -->
+    <section id="quote" class="quote">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Tip of the Day</h3>
+            <p> “Health is a state of complete harmony of the body, mind and spirit. When one is free from 
+              physical disabilities and mental distractions, the gates of the soul open.”</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="quote-btn align-middle" href="https://en.wikipedia.org/wiki/B._K._S._Iyengar">B.K.S. Iyengar</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Quote Section -->
+ 
+
+    <!-- ======= FAQ section ======= -->   
+    <section id="faq" class="faq section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="section-title">
+          <h2>FAQ</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>These are some of the important <strong>Frequently Asked Questions</strong> about the Application</h3>
+              <p>
+                Please check on your Category
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>?</span> If I loose my QR code what can I do? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      You can download the QR code again by entering the log in details
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>?</span> Can I see what is the medical condition of myself? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Yes,of course
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>?</span>Can I make appointments with this application ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      No, we have not given that facility
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/faq.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End FAQ Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Tip of the Day</h3>
+            <p> “To keep the body in good health is a duty…otherwise we shall not be able to keep 
+              the mind strong and clear.”</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="https://en.wikipedia.org/wiki/The_Buddha">Buddha</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>We are a group of Software engineering undergraduate students 
+            at the Open University of Sri Lanka. 
+          <br>Need to get in touch with us?
+          For all inquiries, Please email us using the form below.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>The Open University, Nawala</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>medicolk@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+94 11 1111111</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507014.6350917596!2d79.58577852041873!3d6.884394400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fc0237ed5d25%3A0x4c711f0161ac8139!2sThe%20Open%20University%20of%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1669996387378!5m2!1sen!2slk" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Medico</h3>
+            <p>
+              The Open University <br>
+              Nawala<br>
+              Sri Lanka <br><br>
+              <strong>Phone:</strong> +94 11 1111111<br>
+              <strong>Email:</strong> medicosl@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">F&Q</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Medical History Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Prescription Management</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Keep in touch</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <p>SL<strong>Medico</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/medico.js"></script>
+
+</body>
+
+</html>
